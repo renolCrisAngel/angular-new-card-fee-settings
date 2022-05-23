@@ -12,105 +12,105 @@
      justify-content: center;
  }
 
- .cardfee-title1-container {
+ .titleinput1-container {
      display: flex;
-     height: 25px;
- }
-
-.sellingpricetitle {
-    margin-left: 35px;
-}
-
-.notax{
-    margin-left: 205px;
-}
-
-.tax {
-    margin-left: 190px;
-}
-
- .cardfee-input1-container{
-    display: flex; 
-    flex-direction: row;
-    height: 70px;
- }
-
- .sellingprice {
-    height: 35px;
-    border-radius: 10px;
-    width: 260px;
-    margin-left: 30px;
+     flex-direction: row;
     
  }
 
-.pricenotax {
+.sellingprice-container {
+    gap: 10px;
+}
+
+ .titleinput2-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+ }
+
+.sellingpricetitle {
+    margin-left: px;
+}
+
+.notax{
+    margin-left: 9px;
+}
+
+.tax {
+    margin-left: -7px;
+}
+
+
+.sellingprice {
     height: 35px;
     border-radius: 10px;
     width: 260px;
-    margin-left: 23px;
+    /* margin-left: 30px; */
+    
+ }
+
+ .pricenotax {
+    height: 35px;
+    border-radius: 10px;
+    width: 260px;
+    margin-left: 3px;
 }
 
 .Tax {
     height: 35px;
     border-radius: 10px;
     width: 260px;
-    margin-left: 22px;
+    margin-left: -12px;
 }
 
-.cardfee-title2-container {
-    display: flex;
-    height: 25px;
-}
 
 .taxcategorytitle {
-    margin-left: 35px;
+    margin-left: 3px;
 }
 
 .lastmodifiedtitle {
-    margin-left: 200px;
+    margin-left: 48px;
 }
 
 .modifiedbytitle {
-    margin-left: 195px;
+    margin-left: 58px;
 } 
 
-.cardfee-input2-container{
-   display: flex; 
-   flex-direction: row;
-   height: 65px;
-}
+
 
 .taxcategory {
     height: 35px;
     border-radius: 10px;
     width: 260px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 
 .lastmodified {
     height: 35px;
     border-radius: 10px;
     width: 260px;
-    margin-left: 23px;
+    margin-left: 42px;
 }
 
 .modifiedby {
     height: 35px;
     border-radius: 10px;
     width: 260px;
-    margin-left: 22px;
+    margin-left: 55px;
 }
 
 .radiobutton-checkbox1 {
     display: flex;
     flex-direction: row;
-    height: 80px;
+    /* height: 80px; */
+    margin-top: 30px;
 }
 
 .radiobutton-checkbox2 {
     display: flex;
     flex-direction: row;
-    height: 70px;
+    /* height: 70px; */
+    margin-top: 30px;
 }
 
 .two-buttons {
@@ -185,8 +185,149 @@
     height: 45px;
 }
 
-@media only screen and (max-width: 930px) {
+
+/* Small Screen */
+@media only screen and (max-width: 500px) {
+
+ .flex-container{
+     width: 100%;
+ } 
+
+ .titleinput1-container {
+    display: flex;
+    flex-direction: column;
 }
+
+.titleinput1-container > input{
+    width: 100%;
+    margin-left: 0px;
+    height: 70px;
+}
+
+.titleinput2-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.titleinput2-container > input{
+    width: 100%;
+    margin-left: 0px;
+    height: 70px;
+}
+
+.pricenotax {
+    height: 35px;
+    border-radius: 10px;
+    width: 260px;
+    margin-left: 0px;
+}
+
+.Tax {
+    height: 35px;
+    border-radius: 10px;
+    width: 260px;
+    margin-left: 0px;
+}
+.tax {
+    margin-left: 0px;
+}
+
+.notax{
+    margin-left: 0px;
+}
+
+.lastmodified {
+    height: 35px;
+    border-radius: 10px;
+    width: 260px;
+    margin-left: 0px;
+}
+
+.modifiedby {
+    height: 35px;
+    border-radius: 10px;
+    width: 260px;
+    margin-left: 0px;
+}
+
+.taxcategorytitle {
+    margin-left: 0px;
+}
+
+.lastmodifiedtitle {
+    margin-left: 0px;
+}
+
+.modifiedbytitle {
+    margin-left: 0px;
+} 
+
+.radiobutton1 {
+    width: 80px;
+    height: 80px;
+    margin-left: 0px;
+    margin-top: -34px;
+}
+
+.radiobutton2 {
+    width: 80px;
+    height: 80px;
+    margin-left: 0px;
+    margin-top: -59px;
+}
+
+.checkbox1 {
+    width: 80px;
+    height: 80px;
+    margin-left: 55px;
+    margin-top: -33px;
+}
+
+.checkbox2{
+    width: 80px;
+    height: 80px;
+    margin-left: 55px;
+    margin-top: -51px;
+}
+
+.enabledlabel {
+    margin-top: -16px;
+}
+.save-settings {
+    background-color: #60cc65;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    margin: 9px;
+    cursor: pointer;
+    width: 250px;
+    height: 45px;
+}
+
+.cancel {
+    background-color: #F7F7F7;
+    border: none;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    margin: 9px;
+    cursor: pointer;
+    width: 250px;
+    height: 45px;
+}
+
+
+.two-buttons {
+margin-top: 5px;
+}
+
+}
+
 
 
 /* For mobile phones: */

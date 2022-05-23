@@ -6,34 +6,47 @@
 
   </div>
 
-  <div class="cardfee-title1-container">
-    <div class="three-tiles1">
-      <label for="Selling Price" class="sellingpricetitle" > Selling Price</label>
-      <label for="Price - No Tax" class="notax" > Price - No Tax </label>
-      <label for="Tax" class="tax" > Tax </label>
-    </div>
-  </div>
 
-  <div class="cardfee-input1-container">
-      <input id="SellingPrice" class="sellingprice" [(ngModel)]="sellingprice" />
-      <input id="PriceNoTax" class="pricenotax" [(ngModel)]="pricenotax" />
-      <input id="Tax" class="Tax" [(ngModel)]="tax" />
+<div class="titleinput1-container">
+  
+  <div class="sellingprice-container">
+    <label for="Selling Price" class="sellingpricetitle" > Selling Price</label>
+    <input id="SellingPrice" class="sellingprice" [(ngModel)]="sellingprice" />
   </div>
   
-  <div class="cardfee-title2-container">
-    <div class="three-tiles2">
-      <label for="Tax Category" class="taxcategorytitle" > Tax Category </label>
-      <label for="Last Modified" class="lastmodifiedtitle" > Last Modified </label>
-      <label for="Modified By" class="modifiedbytitle" > Modified By </label>
-    </div>
-  </div>
-
-  <div class="cardfee-input2-container"> 
-      <input id="TaxCategory" class="taxcategory" [(ngModel)]="taxcategory" /> 
-      <input id="LastModified" class="lastmodified" [(ngModel)]="lastmodified" />
-      <input id="ModifiedBy" class="modifiedby" [(ngModel)]="modifiedby" />
+  <div class="pricenotax-container">
+    <label for="Price - No Tax" class="notax" > Price - No Tax </label>
+    <input id="PriceNoTax" class="pricenotax" [(ngModel)]="pricenotax" />
   </div>
   
+  <div class="tax-container">
+    <label for="Tax" class="tax" > Tax </label>
+    <input id="Tax" class="Tax" [(ngModel)]="tax" />
+  </div>
+
+</div>
+
+
+<div class="titleinput2-container">
+
+  <div class="taxcategory-container">
+    <label for="Tax Category" class="taxcategorytitle" > Tax Category </label>
+    <input id="TaxCategory" class="taxcategory" [(ngModel)]="taxcategory" /> 
+  </div>
+  
+  <div class="lastmodified-container">
+    <label for="Last Modified" class="lastmodifiedtitle" > Last Modified </label>
+    <input id="LastModified" class="lastmodified" [(ngModel)]="lastmodified" />
+  </div>
+  
+  <div class="modifiedby-container">
+    <label for="Modified By" class="modifiedbytitle" > Modified By </label>
+    <input id="ModifiedBy" class="modifiedby" [(ngModel)]="modifiedby" />
+  </div>
+  
+</div>
+
+
 <div class="radiobutton-checkbox1">
   <input type="radio" id="deduct" class="radiobutton1" name="deduct" value="Deduct New Card Fee">  
   <label for="deduct"> Deduct New Card Fee From Cash Balance <br>
@@ -69,4 +82,24 @@
 
 
 </div>
+
+
+
+  <!-- <div class="cardfee-title1-container">
+    <div class="three-tiles1">
+    </div>
+  </div>
+
+  <div class="cardfee-input1-container">
+  </div> -->
+  
+  <!-- <div class="cardfee-title2-container">
+    <div class="three-tiles2">
+    </div>
+  </div>
+
+  <div class="cardfee-input1-container">  
+  </div> -->
+  
+
 
